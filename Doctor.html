@@ -1,0 +1,844 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="icon" type="image/png" href="img/image.png" size="164x164">
+    <title>Vishwa Raj Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      <!-- aos link css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- end aos link css -->
+    <link rel="stylesheet" href="css/style.css">
+      <!-- font family css -->
+<link rel="stylesheet" href="css/font.css">
+
+<!-- end font family css -->
+    
+  </head>
+  <body>
+
+    <!-- header -->
+        <header class=" bg-white  border-bottom">
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-light  ">
+        <div class="container-fluid m-0 p-0">
+
+
+            <a class="navbar-brand m-0 p-0 " href="index.html">
+                <div class="">
+                    <img src="img/logo_svg.svg" alt="Logo" style="height:80px">
+
+                </div>
+            </a>
+
+
+            <div class="d-flex justify-content-center align-items-center ">
+
+                <i class="fas fa-search  d-block d-lg-none  "></i>
+
+
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation"
+                     onclick="hideAllSections()"
+                    >
+                    <span class="navbar-toggler-icon "></span>
+<!-- <i class="fas fa-cross    "></i> -->
+                </button>
+                <!-- <button class="btn btn-primary d-block d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <span
+                        class="navbar-toggler-icon "></span></button> -->
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav fw-normal     align-items-lg-center flex-grow-1 gap-2  p-3"
+                    style="font-size:14px;line-height:20px;font-family:DINOT-m">
+                    <li class="nav-item   text-info  flex-fill">
+                        <a class="nav-link active d-flex align-items-center justify-content-between" aria-current="page"
+                            href="book-an-appointment.html">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-bg">
+                                    <i class="fa-regular fa-calendar-minus  "></i><i class="fa fa-heart heart"
+                                        aria-hidden="true"></i>
+                                </div> <span class="text-body">Book an Appointment</span>
+                            </div>
+                            <div class="d-block d-lg-none me-3">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="lg:hidden rtl:rotate-180">
+                                    <path
+                                        d="M1.26751 1.45482e-06L7 5.625L1.26752 11.25L0.249999 10.2516L4.96497 5.625L0.249998 0.998439L1.26751 1.45482e-06Z"
+                                        fill="#202124"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item   flex-fill ">
+
+                        <a class="nav-link d-flex align-items-center justify-content-between " href="Doctor.html">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-bg"><i class="fa-solid fa-user-doctor"></i><i class="fa fa-heart heart"
+                                        aria-hidden="true"></i></div>
+                                <span class="text-body">Doctors</span>
+                            </div>
+                            <div class="d-block d-lg-none me-3">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="lg:hidden rtl:rotate-180">
+                                    <path
+                                        d="M1.26751 1.45482e-06L7 5.625L1.26752 11.25L0.249999 10.2516L4.96497 5.625L0.249998 0.998439L1.26751 1.45482e-06Z"
+                                        fill="#202124"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item  flex-fill ">
+
+                        <a class="nav-link d-flex align-items-center justify-content-between " href="#"
+                            onclick="showSection('section-1')">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-bg"><i class="bi bi-building"></i> <i class="fa fa-heart heart"
+                                        aria-hidden="true"></i></div>
+
+                                <span class="text-body">Hospitals & Clinics</span>
+                            </div class="d-flex align-items-center">
+
+                            <div class="d-block d-lg-none me-3">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="lg:hidden rtl:rotate-180">
+                                    <path
+                                        d="M1.26751 1.45482e-06L7 5.625L1.26752 11.25L0.249999 10.2516L4.96497 5.625L0.249998 0.998439L1.26751 1.45482e-06Z"
+                                        fill="#202124"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item  flex-fill">
+
+                        <a class="nav-link d-flex align-items-center  justify-content-between" href="#"
+                            onclick="showSection('section-2')" style="display:none">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-bg"><i class="fa fa-stethoscope" aria-hidden="true"></i> <i
+                                        class="fa fa-heart heart" aria-hidden="true"></i></div>
+
+
+
+                                <span class="text-body">Specialties</span>
+                            </div>
+                            <div class="d-block d-lg-none me-3">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="lg:hidden rtl:rotate-180">
+                                    <path
+                                        d="M1.26751 1.45482e-06L7 5.625L1.26752 11.25L0.249999 10.2516L4.96497 5.625L0.249998 0.998439L1.26751 1.45482e-06Z"
+                                        fill="#202124"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item   flex-fill ">
+
+                        <a class="nav-link d-flex align-items-center justify-content-between " href="international-patient.html">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-bg"><i class="bi bi-globe"></i><i class="fa fa-heart heart"
+                                        aria-hidden="true"></i></div>
+                                <span class="text-body">International Patients</span>
+                            </div>
+
+                            <div class="d-block d-lg-none me-3">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="lg:hidden rtl:rotate-180">
+                                    <path
+                                        d="M1.26751 1.45482e-06L7 5.625L1.26752 11.25L0.249999 10.2516L4.96497 5.625L0.249998 0.998439L1.26751 1.45482e-06Z"
+                                        fill="#202124"></path>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item   flex-fill">
+
+                        <a class="nav-link d-flex align-items-between justify-content-between " href="#"
+                            onclick="showSection('section-3')"  >
+                            <div class="d-flex align-items-center">
+                                <div class="icon-bg"><i class="bi bi-flower2"></i><i class="fa fa-heart heart"
+                                        aria-hidden="true"></i></div>
+                                <span class="text-body">About Us</span>
+                            </div>
+
+                            <div class="d-block d-lg-none me-3">
+                                <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" class="lg:hidden rtl:rotate-180">
+                                    <path
+                                        d="M1.26751 1.45482e-06L7 5.625L1.26752 11.25L0.249999 10.2516L4.96497 5.625L0.249998 0.998439L1.26751 1.45482e-06Z"
+                                        fill="#202124"></path>
+                                </svg>
+                            </div>
+
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item  flex-fill d-none d-lg-block ">
+
+                        <a class="nav-link d-flex align-items-center justify-content-between" href="#">
+                            <div class="icon-bg">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item  flex-fill  d-flex justify-content-between align-items-center">
+                        <a class="nav-link d-flex align-items-center justify-content-between m-0 p-0 flex-grow-1 "
+                            href="#">
+                            <div class="icon-bg d-flex justify-content-between align-items-center flex-grow-1">
+                                <div class=" fs-6 d-lg-none dinot"><span>Language</span></div>
+                                <div
+                                    class="toogle nav-item btn-info-hover cursor-pointer  bg-info rounded-pill px-2 py-1 d-flex justify-content-between gap-1 align-items-center ">
+
+                                    <small class="rounded-circle bg-white text-info p-1 me-1">EN</small>
+                                    <small class="text-white ">AR</small>
+                                </div>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+</header>
+     <!-- end header -->
+
+<!-- about  -->
+  <div id="section-3"  class="border-top border-start-0 border-end-0  position-absolute top-0 w-100 z-3 m-0 p-0 my-section" style="display:none;">
+     <div class="position-sticky  border-0 bg-white animate-bottom-to-top" style="height:auto;z-index:60;">
+         <div class="  py-lg-5 px-0 w-100">
+<div class="d-block  dinot-m px-4 py-4 w-100 mb-4 d-lg-none d-flex justify-content-between align-items-center border-bottom border-start-0 border-end-0 border-top-0 ">
+    <h5 onclick="hideAllSections()"><i class="bi bi-arrow-left"></i> back to menu</h5>
+    <!-- <button type="button" class="btn-close btn-close-info rounded-circle  btn-close-light" aria-label="Close"></button> -->
+  <button class="btn btn-transparent rounded-circle text-info bg-light fw-mediam  "  onclick="hideAllSections()"><i class="bi bi-x-lg"></i></button>
+</div>
+             <div class="image-container ">
+                 <div class="image-wrapper" style="width:170px;height:250px">
+                     <img src="img/hc-1.png" class="zoom-img" alt="Image 1">
+                 </div>
+                 <div class="image-wrapper" style="width:170px;height:250px">
+                     <img src="img/hc-2.png" class="zoom-img" alt="Image 2">
+                 </div>
+                 <div class="image-wrapper" style="width:170px;height:250px">
+                     <img src="img/hc-3.png" class="zoom-img" alt="Image 3">
+                 </div>
+                 <div class="image-wrapper" style="width:170px;height:250px">
+                     <img src="img/hc-5.jpeg" class="zoom-img" alt="Image 3">
+                 </div>
+                 <div class="image-wrapper" style="width:170px;height:250px">
+                     <img src="img/hc-6.jpeg" class="zoom-img" alt="Image 3">
+                 </div>
+             </div>
+
+         </div>
+
+     </div>
+     <div class="position-fixed  start-0 w-100 bg-black bg-opacity-75 " style="z-index:40;height:100vh;top:120px"
+         onclick="hideAllSections()"></div>
+
+ </div>
+ <!-- end about -->
+<!-- section specialitre -->
+ <div id="section-2" class="border-top border-start-0 border-end-0   position-absolute top-0 w-100 z-3 m-0 p-0 
+border- border-bottom-0  my-section"
+    style="display:none">
+    
+    <div class="position-sticky top-0  bg-white animate-bottom-to-top" style="height:auto;z-index:60;">
+        <div class="d-block  dinot-m px-4 py-4 w-100 mb-4 d-lg-none d-flex justify-content-between align-items-center border-bottom border-start-0 border-end-0 border-top-0 bg-light">
+    <h5 onclick="hideAllSections()"><i class="bi bi-arrow-left"></i> back to menu</h5>
+    <button type="button" class="btn-close" aria-label="Close" onclick="hideAllSections()"></button>
+</div>
+        <div class="alphabet-nav container d-flex flex-wrap gap-3 dinot-m" >
+            <button class="btn btn-transparent  border-0"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <button  class="filter-button "data-letter="All"  onmouseover="filterItems('All',this)">All</button>
+            <button class=" filter-button " data-letter="A"  onmouseover="filterItems('A',this)">A</button>
+            <button  class="filter-button " data-letter="B" onmouseover="filterItems('B',this)" data-letter='B' >B</button>
+            <button  class="filter-button " data-letter="C" onmouseover="filterItems('C',this)">C</button>
+            <button  class="filter-button " data-letter="D" onmouseover="filterItems('D',this)">D</button>
+            <button  class="filter-button " data-letter="E" onmouseover="filterItems('E',this)">E</button>
+            <button  class="filter-button " data-letter="F" onmouseover="filterItems('F',this)">F</button>
+            <button  class="filter-button " data-letter="G" onmouseover="filterItems('G',this)">G</button>
+            <button  class="filter-button " data-letter="H" onmouseover="filterItems('H',this)">H</button>
+            <button  class="filter-button " data-letter="I" onmouseover="filterItems('I',this)">I</button>
+            <button  class="filter-button " data-letter="J" onmouseover="filterItems('J',this)">J</button>
+            <button  class="filter-button " data-letter="K" onmouseover="filterItems('K',this)">K</button>
+            <button  class="filter-button " data-letter="L" onmouseover="filterItems('L',this)">L</button>
+            <button  class="filter-button " data-letter="M" onmouseover="filterItems('M',this)">M</button>
+            <button  class="filter-button " data-letter="N" onmouseover="filterItems('N',this)">N</button>
+            <button  class="filter-button " data-letter="O" onmouseover="filterItems('O',this)">O</button>
+            <button  class="filter-button " data-letter="P" onmouseover="filterItems('P',this)">P</button>
+            <button  class="filter-button " data-letter="Q" onmouseover="filterItems('Q',this)">Q</button>
+            <button  class="filter-button " data-letter="R" onmouseover="filterItems('R',this)">R</button>
+            <button  class="filter-button " data-letter="S" onmouseover="filterItems('S',this)">S</button>
+            <button  class="filter-button " data-letter="T" onmouseover="filterItems('T',this)">T</button>
+            <button  class="filter-button " data-letter="U" onmouseover="filterItems('U',this)">U</button>
+            <button  class="filter-button " data-letter="V" onmouseover="filterItems('V',this)">V</button>
+            <button  class="filter-button " data-letter="W" onmouseover="filterItems('W',this)">W</button>
+            <button  class="filter-button " data-letter="X" onmouseover="filterItems('X',this)">X</button>
+            <button  class="filter-button " data-letter="Y" onmouseover="filterItems('Y',this)">Y</button>
+            <button  class="filter-button " data-letter="Z" onmouseover="filterItems('Z',this)">Z</button>
+          
+            <!-- Add more letters as needed -->
+        </div>
+       
+
+<ul id="items" class="nav flex-column flex-wrap container mx-auto my-4 py-3 dinot-m custom-grid-items fs-14 ">
+<li class="item text-dark  mb-2 ">Aesthetic, Reconstructive and Plastic Surgery</li>
+<li class="item text-dark  mb-2">Allergy and Immunology</li>
+<li class="item text-dark  mb-2">Anaesthesiology</li>
+<li class="item text-dark  mb-2">Audiology</li>
+<li class="item text-dark  mb-2">Bariatric Surgery</li>
+<li class="item text-dark  mb-2">Cardiac Sciences</li>
+<li class="item text-dark  mb-2">Child Development Department</li>
+<li class="item text-dark  mb-2">Critical Care, ICU</li>
+<li class="item text-dark  mb-2">Dentistry</li>
+<li class="item text-dark  mb-2">Dermatology</li>
+<li class="item text-dark  mb-2">Dietetics and Nutrition</li>
+<li class="item text-dark  mb-2">Emergency Medicine</li>
+<li class="item text-dark  mb-2">Endocrinology, Diabetology and Metabolic Disorders</li>
+<li class="item text-dark  mb-2">ENT, Head and Neck Surgery</li>
+<li class="item text-dark  mb-2">Family Medicine</li>
+<li class="item text-dark  mb-2">Foetal Medicine</li>
+<li class="item text-dark  mb-2">Gastroenterology</li>
+<li class="item text-dark  mb-2">Gastrointestinal Surgery</li>
+<li class="item text-dark  mb-2">General and Laparoscopic Surgery</li>
+<li class="item text-dark  mb-2">General Medicine</li>
+<li class="item text-dark  mb-2">Haematology</li>
+<li class="item text-dark  mb-2">Home care</li>
+<li class="item text-dark  mb-2">Homeopathy</li>
+<li class="item text-dark  mb-2">Internal Medicine</li>
+<li class="item text-dark  mb-2">IVF and Infertility</li>
+<li class="item text-dark  mb-2">Lactation Services</li>
+<li class="item text-dark  mb-2">Midwifery Services</li>
+<li class="item text-dark  mb-2">Neonatology</li>
+<li class="item text-dark  mb-2">Nephrology</li>
+<li class="item text-dark  mb-2">Neuroscience</li>
+<li class="item text-dark  mb-2">Nuclear Medicine</li>
+<li class="item text-dark  mb-2">Obstetrics and Gynaecology</li>
+<li class="item text-dark  mb-2">Occupational Medicine</li>
+<li class="item text-dark  mb-2">Oncology</li>
+<li class="item text-dark  mb-2">Ophthalmology</li>
+<li class="item text-dark  mb-2">Oral and Maxillofacial Surgery</li>
+<li class="item text-dark  mb-2">Orthopaedics</li>
+<li class="item text-dark  mb-2">Osteopathy</li>
+<li class="item text-dark  mb-2">P.I.C.U</li>
+<li class="item text-dark  mb-2">Paediatric Cardiology</li>
+<li class="item text-dark  mb-2">Paediatric Oncology</li>
+<li class="item text-dark  mb-2">Paediatric Surgery</li>
+<li class="item text-dark  mb-2">Paediatrics</li>
+<li class="item text-dark  mb-2">Pathology</li>
+<li class="item text-dark  mb-2">Physical Medicine and Rehabilitation</li>
+<li class="item text-dark  mb-2">Physiotherapy and Pain Management</li>
+<li class="item text-dark  mb-2">Podiatry</li>
+<li class="item text-dark  mb-2">Primary Care</li>
+<li class="item text-dark  mb-2">Psychiatry</li>
+<li class="item text-dark  mb-2">Psychology</li>
+<li class="item text-dark  mb-2">Pulmonology</li>
+<li class="item text-dark  mb-2">Radiology</li>
+<li class="item text-dark  mb-2">Rheumatology</li>
+<li class="item text-dark  mb-2">Speech Therapy</li>
+<li class="item text-dark  mb-2">Urgent Care</li>
+<li class="item text-dark  mb-2">Urology and Andrology</li>
+<li class="item text-dark  mb-2">Varicose Veins</li>
+<li class="item text-dark  mb-2">Vascular and Endovascular Surgery</li>
+
+        </ul>
+
+        
+
+    </div>
+    <div class="position-fixed  start-0 w-100 bg-black bg-opacity-75" style="z-index:40;height:100vh;top:120px"
+        onclick="hideAllSections()"></div>
+
+</div>
+ <!-- end section specialites -->
+  <div id="section-1" class="border-0  position-absolute top-0 w-100 z-3 m-0 p-0 my-section" style="display:none">
+            <div class="position-sticky  border-0 bg-white animate-bottom-to-top" style="height:auto;z-index:60;">
+                <div
+                    class="d-block  dinot-m px-4 py-4 w-100 mb-4 d-lg-none d-flex justify-content-between align-items-center border-bottom border-start-0 border-end-0 border-top-0 bg-light">
+                    <h5 onclick="hideAllSections()"><i class="bi bi-arrow-left"></i> back to menu</h5>
+                    <button type="button" class="btn-close" aria-label="Close" onclick="hideAllSections()"></button>
+                </div>
+                <div class="container py-5 ">
+                    <h3 class="text-center pb-4" style="font-family:hero;font-size:32px">select Hospitals & Clinics</h3>
+
+                    <div class="image-container ">
+                        <div class="image-wrapper" style="width:170px;height:250px">
+                            <img src="img/hc-1.png" class="zoom-img" alt="Image 1">
+                        </div>
+                        <div class="image-wrapper" style="width:170px;height:250px">
+                            <img src="img/hc-2.png" class="zoom-img" alt="Image 2">
+                        </div>
+                        <div class="image-wrapper" style="width:170px;height:250px">
+                            <img src="img/hc-3.png" class="zoom-img" alt="Image 3">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="position-fixed  start-0 w-100 bg-black bg-opacity-75 " style="z-index:40;height:100vh;top:120px"
+                onclick="hideAllSections()"></div>
+
+        </div>
+     
+
+ <!-- main data -->
+  <div class="container mt-2 px-xl-0  pt-2">
+    <small class="text-muted dinot py-2 mt-2">Home &bull; <span class="text-dark"> Doctors</span> </small>
+    <div class="d-flex justify-content-between align-items-center">
+        <h1 class="py-4 hero fs-2 ">Our Doctors</h1>
+        <button class="btn btn-light btn-lg  fs-6 fs-md-5 border d-block d-lg-none" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#202124"
+                        class="me-2">
+                        <path
+                            d="M4 10a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-6v4m0 2v8m4-4a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-12v10m0 4v2m4-13a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2 1v1m0 4v8" />
+                    </svg>
+            </button>
+    </div>
+    <div id="filter-template" class="filter-template d-none">
+        <div class="col  p-xl-0 p-lg-0 py-3 " id="city">
+
+            <select class="form-select form-select-lg fs-6 fs-md-5 " name="" id=""
+                style="height:50px">
+                <option value="">City</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Ajman">Ajman</option>
+                <option value="AL Ain">Al Ain</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Fujarih">Fujairh</option>
+                <option value="Ras Al Khaimah">Ras Al Khaimah</option>
+                <option value="Sharjah">Sharjah</option>
+            </select>
+
+        </div>
+        <div class=" py-3  col p-xl-0 p-lg-0" id="hospital">
+            <select class="form-select form-select-lg fs-6 fs-md-5 " name="" id=""
+                style="height:50px">
+                <option value="">Hospital</option>
+                <option value=">NMC Marina Medical Center,Dubai">NMC Marina Medical Center,Dubai </option>
+                <option value="NMC  Medical Center Jebel,Ali Duba">NMC Medical Center Jebel,Ali Dubai</option>
+                <option value="NMC  Royal Hospital Khalifa City,Abu Dhabi">NMC Royal Hospital Khalifa City,Abu Dhabi
+                </option>
+                <option value="NMC  Royal Hospital DIP,Dhabi">NMC Royal Hospital DIP,Dhabi</option>
+                <option value="NMC  Royal Hospital Khalifa">NMC Royal Hospital Khalifa</option>
+
+            </select>
+        </div>
+        <div class=" col py-3 p-xl-0 p-lg-0" id="specially">
+
+            <select class="form-select form-select-lg fs-6 fs-md-5  " name="" id=""
+                style="height:50px">
+                <option value="">Specially</option>
+                <option value="Aesthetic, Reconstructive and Plastic Surgery">Aesthetic, Reconstructive and Plastic
+                    Surgery</option>
+                <option value="Allergy and Immunology">Allergy and Immunology</option>
+                <option value="Anaesthesiology">Anaesthesiology</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+
+                <div id="offcanvas-mobile" class=""></div>
+
+                <!-- gender -->
+                <div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom py-2 mb-2">
+                        <h3 class="fs-5 hero ">Gender</h3>
+                        <a class="btn btn-transparent border-0" data-bs-toggle="collapse" href="#multiCollapseExample1"
+                            role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <span class="toogle-plus-minus-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body border-0 fs-6 dinot">
+                                <div><input type="checkbox" class="me-2"><span>Male</span></div>
+                                <div><input type="checkbox" class="me-2"><span>Female</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- end gender -->
+                <!-- languages -->
+                <div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom py-2 mb-2">
+                        <h3 class="fs-5 hero">Languages</h3>
+                        <a class="btn btn-transparent border-0" data-bs-toggle="collapse" href="#multiCollapseExample2"
+                            role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+                            <span class="toogle-plus-minus-icon"></span> </a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                <div class="card card-body border-0 fs-6 dinot">
+
+                                    <div>
+                                        <div class="input-group border rounded mb-4">
+                                            <span class="input-group-text bg-white border-0">
+                                                <i class="bi bi-search"></i>
+                                            </span>
+                                            <input type="text"
+                                                class="form-control py-2 flex-fill fs-6 fa-md-5 border-0 text-muted "
+                                                placeholder="Language">
+                                        </div>
+                                    </div>
+
+                                    <div><input type="checkbox" class="me-2"><span>Hindi</span></div>
+                                    <div><input type="checkbox" class="me-2"><span>English</span></div>
+                                    <div><input type="checkbox" class="me-2"><span>Tamil</span></div>
+                                    <div><input type="checkbox" class="me-2"><span>Urdu</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end languages -->
+                <!-- Nationality -->
+                <div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom py-2 mb-2">
+                        <h3 class="hero fs-5 ">Nationality</h3>
+                        <a class="btn btn-transparent border-0" data-bs-toggle="collapse" href="#multiCollapseExample3"
+                            role="button" aria-expanded="false" aria-controls="multiCollapseExample2">
+                            <span class="toogle-plus-minus-icon"></span> </a>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                <div class="card card-body border-0 fs-6 dinot">
+
+                                    <div>
+                                        <div class="input-group border rounded mb-4">
+                                            <span class="input-group-text bg-white border-0">
+                                                <i class="bi bi-search"></i>
+                                            </span>
+                                            <input type="text"
+                                                class="form-control py-2 flex-fill fs-6 fa-md-5 border-0 text-muted "
+                                                placeholder="Nationality">
+                                        </div>
+                                    </div>
+                                    <div><input type="checkbox" class="me-2"><span>Indian</span></div>
+                                    <div><input type="checkbox" class="me-2"><span>Egyptian</span></div>
+                                    <div><input type="checkbox" class="me-2"><span>Emirati</span></div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end Nantionality -->
+            </div>
+        </div>
+
+        <div class=" row gap-2   m-0 p-0 ">
+            <div id="desktop-mode-filter" class="col-xl-8   m-0 p-0 row gap-2"></div>
+            
+            <div class="m-0 p-0  col-xl-auto  col-lg-8  flex-grow-1">
+                <div class="input-group rounded m-0 border  bg-white ">
+                    <span class="input-group-text bg-white border-0 ">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input type="text" class="form-control form-control-lg  p-0 border-0 dinot"
+                        placeHolder="Keyword Search" style="height:50px;font-size:0.9375rem !important">
+                </div>
+
+            </div>
+
+        <div class=" mb-4  d-none d-lg-block   col-xl-auto col-lg-3 p-0">
+                <button class="btn btn-light w-100 btn-lg fs-6 fs-md-5 border p-2 dinot" style="height:50px" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <!-- <i  class="fa-solid fa-sliders me-2"></i>  -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="#202124"
+                        class="me-2">
+                        <path
+                            d="M4 10a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-6v4m0 2v8m4-4a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2-12v10m0 4v2m4-13a2 2 0 1 1 4 0 2 2 0 0 1-4 0Zm2 1v1m0 4v8" />
+                    </svg>
+                    <span class="pe-2 small " style="color:#606062;font-size:16px">More Filters</span>
+                </button>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="bg-light py-5 border-bottom">
+    <div class="container">
+        <h4 class="text-muted py-4 fs-5   hero">Found 8 Doctors</h4>
+
+        <div class="d-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+            <!-- cards -->
+
+            <!-- card1 -->
+            <div class="card border-0 " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-1.png" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info hero fs-5">Dr Mah Sheena K Mohammed</h6>
+                    <p class="card-text text-muted dinot-m"> <small>Pathology</small></p>
+                    <p class="card-text text-muted dinot"> <i class="fa-solid fa-location-dot text-info "></i> NMC Royal
+                        Hospital Sharjah, Sharjah</p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!-- end card1 -->
+
+            <!-- card2 -->
+            <div class="card border-0  " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-2.jpeg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Aaia Mohamed Taha Salih</h6>
+                    <p class="card-text text-muted dinot-m"> <small>General Medicine Primary Care</small></p>
+                    <p class="card-text text-muted dinot"> <i class="fa-solid fa-location-dot text-info "></i> NMC
+                        Specialty
+                        Hospital, Abu Dhabi </p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!--end card2 -->
+
+            <!-- card3 -->
+            <div class="card border-0  " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-3.jpeg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Aamir Yassin Aamir Yassin</h6>
+                    <p class="card-text dinot-m text-muted"><small>Paediatrics Pulmonology</small></p>
+                    <p class="card-text text-muted dinot "> <i class="fa-solid fa-location-dot text-info "></i> NMC
+                        Royal
+                        Hospital, Khalifa City </p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!-- end card3 -->
+
+            <!-- card4 -->
+            <div class="card border-0 " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-4.jpeg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Aarti Desai</h6>
+                    <p class="card-text dinot-m text-muted"><small>Dentistry</small></p>
+                    <p class="card-text text-muted dinot"> <i class="fa-solid fa-location-dot text-info "></i> NMC Royal
+                        Hospital, DIP </p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!-- end card4 -->
+
+            <!--  card5 -->
+            <div class="card border-0 " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-5.jpeg" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Abdel Razaq Ahmad Alyasin</h6>
+                    <p class="card-text dinot-m text-muted"><small>Paediatrics Endocrinology, Diabetology and Metabolic
+                            Disorders</small></p>
+                    <p class="card-text text-muted dinot"> <i class="fa-solid fa-location-dot text-info "></i> NMC Royal
+                        Hospital, Khalifa City </p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!--  end card5 -->
+
+
+            <!--   card6 -->
+            <div class="card border-0 " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-6.png" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Abdelhameed Mostafa Elmesery</h6>
+                    <p class="card-text dinot-m text-muted"><small>Paediatrics</small></p>
+                    <p class="card-text text-muted dinot"> <i class="fa-solid fa-location-dot text-info "></i>NMC Royal
+                        Hospital, Khalifa City </p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!--  end card6 -->
+
+            <!--   card7 -->
+            <div class="card border-0 " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-7.png" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Abdul Matheen Ganguli</h6>
+                    <p class="card-text text-muted"><small>General Medicine</small></p>
+                    <p class="card-text text-muted"> <i class="fa-solid fa-location-dot text-info "></i>NMC Medical
+                        Centre, Shahba </p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+            </div>
+            <!--  end card 7 -->
+
+            <!--   card8 -->
+            <div class="card border-0 " data-aos="fade-up">
+                <div class="card-header bg-white border-0">
+                    <img src="img/doc-8.png" alt="" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column">
+                    <h6 class="card-title text-info  hero fs-5">Dr Abdul Mujeer</h6>
+                    <p class="card-text text-muted"><small>Cardiac Sciences</small></p>
+                    <p class="card-text text-muted"> <i class="fa-solid fa-location-dot text-info "></i>NMC Specialty
+                        Hospital, Al Ain</p>
+                    <a href="#" class="btn btn-info w-100 mt-auto dinot text-white  btn-info-hover">Book on Appointment</a>
+                </div>
+                <!--  end card8 -->
+            </div>
+
+        </div>
+        <!-- end cards -->
+
+    </div>
+
+
+
+    <!-- Repeat for more doctors -->
+</div>
+
+</div>
+<div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 m-5 " style="font-family:DINOT" >
+      
+        <div class="col mb-3">
+            <h5 class="pb-1" style="font-family:Hero;line-height:1.75rem">About Us</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2 pb-1"><a href="#" class="nav-link p-0 text-body-secondary"><span>ViswaRaj Hospital</span></a></li>
+                <li class="nav-item mb-2 pb-1"><a href="#" class="nav-link p-0 text-body-secondary"><span>Ethics & Compliance</span></a></li>
+                <li class="nav-item mb-2 pb-1"><a href="#" class="nav-link p-0 text-body-secondary"><span>Investor Relations</span></a></li>
+                <li class="nav-item mb-2 pb-1"><a href="#" class="nav-link p-0 text-body-secondary"><span>Careers</span></a></li>
+                <li class="nav-item mb-2 pb-1"><a href="#" class="nav-link p-0 text-body-secondary"><span>Contact us</span></a></li>
+            </ul>
+        </div>
+        <div class="col mb-3">
+            <h5 class="pb-1"style="font-family:Hero;line-height:1.75rem" >Services</h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Hospital & Clinics</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Doctors</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Book an Appointment</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Feedback</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Complaints First Aid Event Support</span></a></li>
+            </ul>
+        </div>
+        <div class="col mb-3">
+            <h5 class="pb-1" style="font-family:Hero;;line-height:1.75rem">Other Links </h5>
+            <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>International Patients</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Media and News</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Privacy Statement</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Social Feeds</span></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Patient Family Rights & Responsibilities</span></a></li>
+            </ul>
+        </div>
+
+          <div class="col-mb-3 flex-grow-1">
+            <h5 class="pb-1" style="font-family:Hero;;line-height:1.75rem"> Follow Us </h5>
+            <ul class="nav flex-column my-3">
+                <li class="nav-item mb-4">
+                    <div class="d-flex gap-2 ">
+                <div class="bg-light-blue rounded-circle p-2"><i class="bi bi-facebook"></i></div>
+                <div class="bg-light-blue rounded-circle p-2"><i class="bi bi-linkedin"></i></div>
+                <div class="bg-light-blue rounded-circle p-2"><i class="bi bi-instagram"></i></div>
+                <div class="bg-light-blue rounded-circle p-2"><i class="bi bi-youtube"></i></div>
+                <div class="bg-light-blue rounded-circle p-2"><i class="bi bi-twitter"></i></div>
+            </li>
+
+                <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary"><span>Download the NMC MyHealth App</li> -->
+              
+                
+                <li class="nav-item  mb-3"><h5 class="text-dark fs-5">Download the VRH MyHealth App</h5></li>
+                  <li class="nav-item mb-2 d-flex gap-2 algin-items-center">
+                    <button class="btn btn-dark bg-black"><i class="bi bi-apple"></i> App Store</button>
+                  <button class="btn btn-dark bg-black"> <i class="bi bi-google-play"></i> Google Play</button></li>
+            </ul>
+        </div>
+
+        <div class="col-md-12 mb-3">
+            <img src="img/VRH_Logo.jpg" alt="" width="300px" height="100px">
+        </div>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+    <script>
+    function updateScreenInfo() {
+        const width = window.innerWidth;
+        const filterTemplate = document.getElementById('filter-template').innerHTML;
+        const containerText = document.getElementById('desktop-mode-filter').innerHTML;
+        console.log(containerText)
+        const container = document.getElementById('desktop-mode-filter');
+
+        const Mobilecontainer = document.getElementById('offcanvas-mobile');
+
+        if (width <= 992) {
+            // Desktop screen - show filter
+
+            Mobilecontainer.innerHTML = filterTemplate;
+            container.innerHTML = ''
+            console.log(container)
+        } else {
+            // Mobile screen - remove filter
+            Mobilecontainer.innerHTML = '';
+            container.innerHTML = filterTemplate;
+        }
+    }
+
+    // Run on page load and screen resize
+    window.addEventListener('load', updateScreenInfo);
+    window.addEventListener('resize', updateScreenInfo);
+    </script>
+  <!-- end main data -->
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- aos.js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init()
+    </script>
+    <!-- end aos.js -->
+  </body>
+</html>
